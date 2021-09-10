@@ -14,7 +14,7 @@ export class ButtonComponent implements OnInit {
   ngOnInit(): void {}
 
   onClick() {
-    if (this.text == 'Save') {
+    if (this.text == 'Submit') {
       this.btnClick.emit();
     } else {
       window.alert(this.text + ' is clicked!');

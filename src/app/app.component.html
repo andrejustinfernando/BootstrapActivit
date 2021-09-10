@@ -9,7 +9,7 @@
         <app-button text="Inquire"></app-button>
     </div>
 
-    <div class="card">
+    <div class="card container3">
       <div class="card-header">Request Information</div>
       <div class="card-body">
           <div class="container2 d-flex flex-row justify-content-around">
@@ -54,7 +54,7 @@
     </div>
 
 
-    <div class="card">
+    <div class="card container3">
       <div class="card-header">Project Profile</div>
       <div class="card-body">
         <div class="container2 d-flex flex-row justify-content-around">
@@ -90,7 +90,7 @@
       </div>    
   </div>
 
-  <div class="card">
+  <div class="card container3">
     <div class="card-header">User Results</div>
     <div class="card-body">
       <div class="container2 d-flex flex-row justify-content-around">
@@ -174,9 +174,15 @@
     </div>    
 </div>
 
+<div class="d-flex justify-content-end">
+  <app-button text="Cancel"></app-button>
+  <app-button text="Return"></app-button>
+  <app-button text="Save"></app-button>
+  <app-button text="Submit" (btnClick)="open(content)"></app-button>
+</div>
 
 
-    <app-button text="Save" (btnClick)="open(content)"></app-button>
+    
     <ng-template #content let-modal>
         <div class="modal-header">
           <h4 class="modal-title" id="modal-basic-title">Field Data</h4>
