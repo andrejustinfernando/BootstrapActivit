@@ -1,4 +1,8 @@
-
+<div class="card">
+    <div class="card-header head">
+      Bootstrap Training
+    </div>
+</div>
 
 <div class="wrapper">
     <app-header></app-header> 
@@ -174,12 +178,17 @@
     </div>    
 </div>
 
-<div class="d-flex justify-content-end">
-  <app-button text="Cancel"></app-button>
-  <app-button text="Return"></app-button>
-  <app-button text="Save"></app-button>
-  <app-button text="Submit" (btnClick)="open(content)"></app-button>
+<div class="card">
+    <div class="card-header foot">
+        <div class="d-flex justify-content-end">
+            <app-button text="Cancel"></app-button>
+            <app-button text="Return"></app-button>
+            <app-button text="Save"></app-button>
+            <app-button text="Submit" (btnClick)="open(content)"></app-button>
+          </div>
+    </div>
 </div>
+
 
 
     
