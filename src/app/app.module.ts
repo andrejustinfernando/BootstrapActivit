@@ -8,6 +8,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { TxtfieldComponent } from './components/txtfield/txtfield.component';
 import { FormsModule } from '@angular/forms';
+import { RouterModule } from '@angular/router';
+import { HomeComponent } from './components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -15,8 +17,15 @@ import { FormsModule } from '@angular/forms';
     ButtonComponent,
     HeaderComponent,
     TxtfieldComponent,
+    HomeComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, NgbModule, FormsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    NgbModule,
+    FormsModule,
+    RouterModule.forRoot([{ path: 'bootstrap', component: HomeComponent }]),
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

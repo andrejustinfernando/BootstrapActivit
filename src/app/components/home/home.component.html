@@ -1,0 +1,272 @@
+
+
+<div class="wrapper">
+    <app-header></app-header> 
+    <div class="d-flex justify-content-end">
+        <app-button text="Copy Report"></app-button>
+        <app-button text="Print"></app-button>
+        <app-button text="Status Track"></app-button>
+        <app-button text="Inquire"></app-button>
+    </div>
+
+    <div class="card container3">
+      <div class="card-header">Request Information</div>
+      <div class="card-body">
+          <div class="container2 d-flex flex-row justify-content-around">
+          <table style="width: 100%;">
+            <colgroup>
+              <col span="1" style="width: 20%;">
+              <col span="1" style="width: 30%;">
+              <col span="1" style="width: 20%;">
+              <col span="1" style="width: 30%;">
+           </colgroup>
+              <tr>
+                <td style="text-align: right; padding-right: 20px;">Report No. </td>
+                <td>  <input type="text" style="width: 100%;" [id]="repno" [(ngModel)]="repno" ></td>
+                <td style="text-align: right; padding-right: 20px;">Request No.</td>
+                <td> <input type="text" style="width: 100%;" [id]="reqno" [(ngModel)]="reqno" ></td>
+              </tr>
+              <tr>
+                <td style="text-align: right; padding-right: 20px;">Report Status</td>
+                <td> <input type="text" style="width: 100%;" [id]="repstat" [(ngModel)]="repstat" ></td>
+                <td style="text-align: right; padding-right: 20px;">Status Date</td>
+                <td>  <input type="text" style="width: 100%;" [id]="statd" [(ngModel)]="statd" ></td>
+              </tr>
+                  <tr>
+                  <td style="text-align: right; padding-right: 20px;">Appraiser</td>
+                  <td> <input type="text" style=" width: 100%;" [id]="appr" [(ngModel)]="appr" ></td>
+                  <td style="text-align: right; padding-right: 20px;">Requested By</td>
+                  <td>  <input type="text" style=" width: 100%;" [id]="reqby" [(ngModel)]="reqby" ></td>
+              </tr>
+              <tr>
+                <td style="text-align: right; padding-right: 20px;">Developer Name</td>
+                <td colspan="3"> <input type="text" style="width: 100%;" [id]="dev" [(ngModel)]="dev" ></td>
+            </tr>
+              <tr>
+                <td style="text-align: right; padding-right: 20px;">Report Date </td>
+                <td>  <input type="text" style="width: 100%;" [id]="repdate" [(ngModel)]="repdate" ></td>
+                <td style="text-align: right; padding-right: 20px;">Requesting Date</td>
+                <td> <input type="text" style="width: 100%;" [id]="reqdate" [(ngModel)]="reqdate" ></td>
+              </tr>
+            </table>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="card container3">
+      <div class="card-header">Project Profile</div>
+      <div class="card-body">
+        <div class="container2 d-flex flex-row justify-content-around">
+          <table style="width: 100%;">
+            <colgroup>
+              <col span="1" style="width: 20%;">
+              <col span="1" style="width: 30%;">
+              <col span="1" style="width: 20%;">
+              <col span="1" style="width: 30%;">
+           </colgroup>
+            <tr>
+              <td style="text-align: right; padding-right: 20px;">Project Name</td>
+              <td colspan="3"><input type="text" style="width: 100%;" [id]="projname" [(ngModel)]="projname" ></td>
+            </tr>
+            <tr>
+              <td style="text-align: right; padding-right: 20px;">Property Location</td>
+              <td colspan="3"> <input type="text" style="width: 100%;" [id]="proploc" [(ngModel)]="proploc" ></td>
+            </tr>
+            <tr>
+                <td style="text-align: right; padding-right: 20px;">Province</td>
+                <td><input type="text" style="width: 100%;" [id]="province" [(ngModel)]="province" ></td>
+                <td style="text-align: right; padding-right: 20px;">City</td>
+                <td><input type="text" style="width: 100%;" [id]="city" [(ngModel)]="city" ></td>
+              </tr>
+              <tr>
+                <td style="text-align: right; padding-right: 20px;">Scheme</td>
+                <td><input type="text" style="width: 100%;" [id]="scheme" [(ngModel)]="scheme" ></td>
+                <td style="text-align: right; padding-right: 20px;">Purpose</td>
+                <td><input type="text" style="width: 100%;" [id]="purpose" [(ngModel)]="purpose" ></td>
+              </tr>
+            </table>
+        </div>
+      </div>    
+  </div>
+
+  <div class="card container3">
+    <div class="card-header">User Results</div>
+    <div class="card-body">
+      <div class="container2 d-flex flex-row justify-content-around">
+        <table class="table table-striped table-bordered table-sm">
+          <thead class="bg-primary">
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">First</th>
+              <th scope="col">Last</th>
+              <th scope="col">Address</th>
+              <th scope="col">User Type</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>Makati</td>
+              <td>Admin</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>Manila</td>
+              <td>User</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Larry</td>
+              <td>Velasquez</td>
+              <td>Quezon City</td>
+              <td>User</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>Makati</td>
+              <td>Admin</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>Manila</td>
+              <td>User</td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td>Larry</td>
+              <td>Velasquez</td>
+              <td>Quezon City</td>
+              <td>User</td>
+            </tr>
+            <tr>
+              <th scope="row">7</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>Makati</td>
+              <td>Admin</td>
+            </tr>
+            <tr>
+              <th scope="row">8</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>Manila</td>
+              <td>User</td>
+            </tr>
+            <tr>
+              <th scope="row">9</th>
+              <td>Larry</td>
+              <td>Velasquez</td>
+              <td>Quezon City</td>
+              <td>User</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>    
+</div>
+
+<div class="d-flex justify-content-end">
+  <app-button text="Cancel"></app-button>
+  <app-button text="Return"></app-button>
+  <app-button text="Save"></app-button>
+  <app-button text="Submit" (btnClick)="open(content)"></app-button>
+</div>
+
+
+    
+    <ng-template #content let-modal>
+        <div class="modal-header">
+          <h4 class="modal-title" id="modal-basic-title">Field Data</h4>
+          <button type="button" class="close" aria-label="Close" (click)="modal.dismiss()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+
+              <table style="width: 100%;">
+                <colgroup>
+                  <col span="1" style="width: 50%;">
+                  <col span="1" style="width: 50%;">
+               </colgroup>
+                  <tr>
+                    <td style="text-align: right; padding-right: 20px;">Report No.</td>
+                    <td>{{repno}}</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: right; padding-right: 20px;">Request No.</td>
+                    <td>{{reqno}}</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: right; padding-right: 20px;">Report Status</td>
+                    <td>{{repstat}}</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: right; padding-right: 20px;">Status Date</td>
+                    <td>{{statd}}</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: right; padding-right: 20px;">Appraiser</td>
+                    <td>{{appr}}</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: right; padding-right: 20px;">Requested By</td>
+                    <td>{{reqby}}</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: right; padding-right: 20px;">Developer Name</td>
+                    <td>{{dev}}</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: right; padding-right: 20px;">Report Date</td>
+                    <td>{{repdate}}</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: right; padding-right: 20px;">Requesting Date</td>
+                    <td>{{reqdate}}</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: right; padding-right: 20px;">Project Name</td>
+                    <td>{{projname}}</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: right; padding-right: 20px;">Property Location</td>
+                    <td>{{proploc}}</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: right; padding-right: 20px;">Province</td>
+                    <td>{{province}}</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: right; padding-right: 20px;">City</td>
+                    <td>{{city}}</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: right; padding-right: 20px;">Scheme</td>
+                    <td>{{scheme}}</td>
+                  </tr>
+                  <tr>
+                    <td style="text-align: right; padding-right: 20px;">Purpose</td>
+                    <td>{{purpose}}</td>
+                  </tr>
+              </table>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-dark" (click)="modal.close()">Close</button>
+        </div>
+      </ng-template>
+</div>
+<router-outlet></router-outlet>
+
